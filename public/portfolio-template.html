@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .prose {
+            max-width: none;
+        }
+        .prose h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #1f2937;
+        }
+        .prose h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #374151;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+        .prose h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: #4b5563;
+        }
+        .prose h4 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            color: #6b7280;
+        }
+        .prose p {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+        .prose ul {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+        .prose li {
+            margin-bottom: 0.5rem;
+        }
+        .prose a {
+            color: #3b82f6;
+            text-decoration: underline;
+        }
+        .prose a:hover {
+            color: #1d4ed8;
+        }
+        .prose strong {
+            font-weight: 600;
+            color: #1f2937;
+        }
+        .prose em {
+            font-style: italic;
+            color: #6b7280;
+        }
+        .prose code {
+            background-color: #f3f4f6;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-family: 'Courier New', monospace;
+            font-size: 0.875rem;
+        }
+        .prose blockquote {
+            border-left: 4px solid #e5e7eb;
+            padding-left: 1rem;
+            margin: 1rem 0;
+            font-style: italic;
+            color: #6b7280;
+        }
+        .theme-modern {
+            --primary-color: #3b82f6;
+            --secondary-color: #f3f4f6;
+            --accent-color: #1d4ed8;
+        }
+        .theme-dark {
+            --primary-color: #8b5cf6;
+            --secondary-color: #1f2937;
+            --accent-color: #a855f7;
+            background-color: #111827;
+            color: #f9fafb;
+        }
+        .theme-dark .prose h1,
+        .theme-dark .prose h2,
+        .theme-dark .prose h3,
+        .theme-dark .prose h4 {
+            color: #f9fafb;
+        }
+        .theme-dark .prose h2 {
+            border-bottom-color: #374151;
+        }
+        .theme-minimal {
+            --primary-color: #000000;
+            --secondary-color: #f9fafb;
+            --accent-color: #374151;
+        }
+        .theme-colorful {
+            --primary-color: #ec4899;
+            --secondary-color: #fdf2f8;
+            --accent-color: #be185d;
+            background: linear-gradient(135deg, #fdf2f8 0%, #f0f9ff 100%);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-white">
+    <div class="max-w-4xl mx-auto p-6">
+        <div class="prose prose-lg">
+            <!-- Markdown content will be inserted here -->
+            <h1>John Doe</h1>
+            <h2>Full Stack Developer</h2>
+            
+            <h3>Contact</h3>
+            <ul>
+                <li>Email: john.doe@example.com</li>
+                <li>Phone: +1 (555) 123-4567</li>
+                <li>Location: San Francisco, CA</li>
+                <li>LinkedIn: <a href="https://linkedin.com/in/johndoe">linkedin.com/in/johndoe</a></li>
+                <li>GitHub: <a href="https://github.com/johndoe">github.com/johndoe</a></li>
+            </ul>
+            
+            <h3>About Me</h3>
+            <p>Passionate full-stack developer with 5+ years of experience building scalable web applications. I love creating efficient, user-friendly solutions and staying up-to-date with the latest technologies.</p>
+            
+            <h3>Skills</h3>
+            <ul>
+                <li><strong>Frontend:</strong> React, Next.js, TypeScript, Tailwind CSS</li>
+                <li><strong>Backend:</strong> Node.js, Python, PostgreSQL, MongoDB</li>
+                <li><strong>Tools:</strong> Git, Docker, AWS, Vercel</li>
+            </ul>
+            
+            <h3>Experience</h3>
+            
+            <h4>Senior Frontend Developer | TechCorp Inc.</h4>
+            <p><em>January 2022 - Present</em></p>
+            <ul>
+                <li>Led development of customer-facing dashboard serving 10k+ users</li>
+                <li>Improved application performance by 40% through code optimization</li>
+                <li>Mentored junior developers and established coding standards</li>
+            </ul>
+            
+            <h4>Full Stack Developer | StartupXYZ</h4>
+            <p><em>June 2020 - December 2021</em></p>
+            <ul>
+                <li>Built and maintained e-commerce platform using React and Node.js</li>
+                <li>Implemented payment processing and inventory management systems</li>
+                <li>Collaborated with design team to create responsive user interfaces</li>
+            </ul>
+            
+            <h3>Projects</h3>
+            
+            <h4>E-Commerce Platform</h4>
+            <p>A full-stack e-commerce solution with React, Node.js, and Stripe integration.</p>
+            <ul>
+                <li><strong>Tech Stack:</strong> React, Node.js, MongoDB, Stripe</li>
+                <li><strong>Features:</strong> User authentication, payment processing, admin dashboard</li>
+                <li><a href="https://example.com">Live Demo</a> | <a href="https://github.com/johndoe/ecommerce">GitHub</a></li>
+            </ul>
+            
+            <h4>Task Management App</h4>
+            <p>A collaborative task management application with real-time updates.</p>
+            <ul>
+                <li><strong>Tech Stack:</strong> Next.js, Socket.io, PostgreSQL</li>
+                <li><strong>Features:</strong> Real-time collaboration, drag-and-drop interface</li>
+                <li><a href="https://example.com">Live Demo</a> | <a href="https://github.com/johndoe/taskapp">GitHub</a></li>
+            </ul>
+            
+            <h3>Education</h3>
+            
+            <h4>Bachelor of Science in Computer Science</h4>
+            <p><em>University of California, Berkeley | 2016-2020</em></p>
+            <ul>
+                <li>Relevant Coursework: Data Structures, Algorithms, Database Systems</li>
+                <li>GPA: 3.8/4.0</li>
+            </ul>
+            
+            <h3>Certifications</h3>
+            <ul>
+                <li>AWS Certified Developer Associate (2023)</li>
+                <li>Google Cloud Professional Developer (2022)</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        // Theme switching functionality
+        function switchTheme(theme) {
+            document.body.className = `min-h-screen theme-${theme}`;
+        }
+        
+        // Add interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Portfolio loaded successfully!');
+            
+            // Add smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
